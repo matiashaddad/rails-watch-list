@@ -1,0 +1,7 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.input :description, as: :text %>
+  <%= f.input :accepts,     as: :radio_buttons %>
+  <%= f.button :submit %>
+<% end %>
